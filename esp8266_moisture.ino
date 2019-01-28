@@ -10,9 +10,8 @@
 #include <ESP8266WiFiMulti.h>
 #include <ESP8266HTTPClient.h>
 
-#define  MOISURE_THRESHOLD     55
-
 // user config: TODO
+#define  MOISURE_THRESHOLD     55   // moisture alert threshold
 const char* wifi_ssid = "......................";             // SSID
 const char* wifi_password = "......................";         // WIFI
 const char* apiKeyIn = "......................";      // API KEY IN
