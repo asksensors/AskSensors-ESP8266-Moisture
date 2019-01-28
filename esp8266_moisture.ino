@@ -11,7 +11,7 @@
 #include <ESP8266HTTPClient.h>
 
 // user config: TODO
-#define  MOISURE_THRESHOLD     55   // moisture alert threshold
+#define  MOISTURE_THRESHOLD     55   // moisture alert threshold
 const char* wifi_ssid = "......................";             // SSID
 const char* wifi_password = "......................";         // WIFI
 const char* apiKeyIn = "......................";      // API KEY IN
@@ -52,7 +52,7 @@ void loop() {
     moisture_value= analogRead(moisture_Pin);
     moisture_value= moisture_value/10;
     Serial.println(moisture_value);
-   if(moisture_value > MOISURE_THRESHOLD) moisture_state = 0;
+   if(moisture_value > MOISTURE_THRESHOLD) moisture_state = 0;
    else moisture_state = 1;
    
 
