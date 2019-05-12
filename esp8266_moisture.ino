@@ -1,7 +1,7 @@
 /*
  * AskSensors IoT Platform. 
  * Description: Soil moisture monitoring using ESP8266 and the AskSensors IoT cloud.
- *  Author: https://asksensors.com, 2018
+ *  Author: https://asksensors.com, 2018 - 2019
  *  github: https://github.com/asksensors/AskSensors-ESP8266-Moisture
  */
 
@@ -15,6 +15,7 @@
 const char* wifi_ssid = "......................";             // SSID
 const char* wifi_password = "......................";         // WIFI
 const char* apiKeyIn = "......................";      // API KEY IN
+const unsigned int writeInterval = 25000; // write interval (in ms)
 
 // ASKSENSORS config.
 String host = "http://api.asksensors.com";         // ASKSENSORS API host name
@@ -103,5 +104,5 @@ void loop() {
         Serial.println("*****************************************************");
     }
 
-    delay(25000);
+    delay(writeInterval);
 }
