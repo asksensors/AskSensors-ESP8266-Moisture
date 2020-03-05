@@ -1,7 +1,7 @@
 /*
  * AskSensors IoT Platform. 
  * Description: Soil moisture monitoring using ESP8266 and the AskSensors IoT cloud.
- *  Author: https://asksensors.com, 2018 - 2019
+ *  Author: https://asksensors.com, 2018 - 2020
  *  github: https://github.com/asksensors/AskSensors-ESP8266-Moisture
  */
 
